@@ -78,7 +78,7 @@ class PropelBundle extends Bundle
 
                 $manager->setReadConfiguration($slaveConnections);
             } else {
-                $manager = new ConnectionManagerSingle();
+                $manager = new ConnectionManagerSingle($name);
                 $manager->setConfiguration($config);
             }
 
