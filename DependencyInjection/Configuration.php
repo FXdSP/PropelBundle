@@ -44,7 +44,7 @@ class Configuration extends PropelConfiguration
         ;
     }
 
-    protected function addRuntimeSection(ArrayNodeDefinition $node)
+    protected function addRuntimeSection(ArrayNodeDefinition $node): void
     {
         $node
             ->children()
@@ -112,7 +112,7 @@ class Configuration extends PropelConfiguration
             ->end();
     }
 
-    protected function addDatabaseSection(ArrayNodeDefinition $node)
+    protected function addDatabaseSection(ArrayNodeDefinition $node): void
     {
         $validAdapters = array('mysql', 'pgsql', 'sqlite', 'mssql', 'sqlsrv', 'oracle');
 
