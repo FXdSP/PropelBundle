@@ -27,7 +27,7 @@ class Configuration extends PropelConfiguration
         $this->defaultDir = $kernelDir.'/propel';
     }
 
-    protected function addPathsSection(ArrayNodeDefinition $node)
+    protected function addPathsSection(ArrayNodeDefinition $node): void
     {
         $node
             ->children()
